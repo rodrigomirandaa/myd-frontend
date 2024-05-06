@@ -3,6 +3,7 @@ import ButtonPrimary from "../../components/Button/Button";
 import logo from "../../../public/icons/logo.png";
 import styles from "./InitialPage.module.css";
 import { Row, Col } from "antd";
+import { Link } from "react-router-dom";
 
 const InitialPage = () => {
   return (
@@ -21,14 +22,31 @@ const InitialPage = () => {
         <Row
           style={{
             marginTop: "25px",
-            marginBottom: "15px",
           }}
         >
           <ButtonPrimary name={"Entrar"} />
         </Row>
-        <Row>
+        <Row
+         style={{
+          marginTop: "15px",
+        }}
+        >
           <ButtonPrimary name={"Cadastrar"} />
         </Row>
+
+        <Row
+        style={{
+          marginTop: "15px",
+        }}
+        >
+          <Link to="/sobre">
+          <ButtonPrimary name={"Sobre nós"} />
+          </Link>
+          
+        </Row>
+
+        
+        
       </div>
     </React.Fragment>
   );

@@ -5,6 +5,7 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { CatalogoClinicas } from './pages/CatalogoClinicas/CatalogoClinicas/CatalogoClinicas.jsx';
 import InitialPage from './pages/InitialPage/InitialPage.jsx';
+import SobrePage from './pages/SobrePage/SobrePage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
       { path: '/catalogo-clinicas', element: <CatalogoClinicas /> },
     ],
   },
+
+  { 
+    path: '/sobre', 
+    element: <SobrePage/>}
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
