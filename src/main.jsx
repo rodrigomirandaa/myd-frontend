@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { CatalogoClinicas } from './pages/CatalogoClinicas/CatalogoClinicas/CatalogoClinicas.jsx';
 import InitialPage from './pages/InitialPage/InitialPage.jsx';
 import SobrePage from './pages/SobrePage/SobrePage.jsx';
+import Home from './pages/Home/Home.jsx';
 
 const router = createBrowserRouter([
   {
@@ -16,10 +17,18 @@ const router = createBrowserRouter([
       { path: '/catalogo-clinicas', element: <CatalogoClinicas /> },
     ],
   },
-
   { 
     path: '/sobre', 
-    element: <SobrePage/>}
+    element: <SobrePage/>
+    // errorElement: <ErrorPage />,
+  },
+  {
+    path: '/home',
+    element: <Home/>
+    // errorElement: <ErrorPage />,
+
+  }
+  
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

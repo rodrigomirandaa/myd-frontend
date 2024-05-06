@@ -24,7 +24,10 @@ const InitialPage = () => {
             marginTop: "25px",
           }}
         >
+          <Link to="/Home">
           <ButtonPrimary name={"Entrar"} />
+          </Link>
+
         </Row>
         <Row
          style={{
